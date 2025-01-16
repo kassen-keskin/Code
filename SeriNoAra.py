@@ -19,8 +19,6 @@ input_string = input("Lütfen sorgulamak istediğiniz değeri girin: ")
 # SQL sorgusu
 query = f"select * from [Mandant_2].[Custom].[SeriNo] with(nolock) where ArtikelSeriNo = ?"
 
-
-
 # Sorguyu çalıştır ve sonuçları al
 cursor.execute(query, input_string)
 rows = cursor.fetchall()
